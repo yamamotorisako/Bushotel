@@ -1,0 +1,31 @@
+@media (max-width: 550px) {
+  body {
+    width: 100%;
+    border: solid 1px green;
+    margin: 0; } }
+@media (min-width: 550px) {
+  body {
+    width: 1000px;
+    border: solid 1px green;
+    margin: 0 auto; } }
+header {
+  width: 100%;
+  background-color: #E87A90;
+  position: relative; }
+  @media (min-width: 550px) {
+    header {
+      height: 100px; }
+      header #title {
+        width: 400px;
+        height: 80px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: #D0104C; }
+        header #title .title_icon {
+          width: 80px;
+          height: 80px;
+          background-color: #9E7A7A; } }
+
+/*# sourceMappingURL=style.css.map */
