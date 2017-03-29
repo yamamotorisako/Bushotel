@@ -1,3 +1,10 @@
+$basewhite : #f8f8f8;
+$red: #C73E3A;
+$darkred: #A26769;
+
+html{
+    background-color: $basewhite;
+}
 //スマホ
 @media (max-width: 550px) {
     body{
@@ -12,32 +19,58 @@
         width: 1000px;
         border: solid 1px green;
         margin: 0 auto;
+        p{
+            font-size: 15px;
+            -webkit-margin-before: 8px;
+            -webkit-margin-after: 8px;
+            -webkit-margin-start: 0px;
+            }
     }
 }
 
 header{
     width: 100%;
-    background-color: #E87A90;
+    background-color: #f8f8f8;
     position: fixed;
-    //headerピンクかな
+    top: -1px;
+    border-bottom: solid 5px #C73E3A;
+    //ヘッダーのボーダーはピンク
     z-index: 999;
     //スマホ
     @media (max-width: 550px) {
-        height: 70px;
+        height: 71px;
         #title{
-            width: 70%;
+            width: 90%;
             height: 50px;
             position: absolute;
         	top: 0;
         	bottom: 0;
         	margin: auto;
-        	background-color: #D0104C;
-            //title赤みたいな
+        	
+            .titles{
+                height: 50px;
+                position: relative;
+                img{
+                    float: left;
+                }
+            }
+            .title_icon{
+                width: 50px;
+                margin-right: 10px;
+                margin-left: 5%;
+            }
+            .title{
+                width: 60%;
+                position: absolute;
+                top: 0;
+        	    bottom: 0;
+        	    margin: auto;
+            }
         }
     }
     //デスクトップ
     @media (min-width: 550px) {
-        height: 100px;
+        height: 101px;
         width: 1000px;
         #title{
             width: 360px;
@@ -46,31 +79,38 @@ header{
         	top: 0;
         	bottom: 0;
         	margin: auto;
-            background-color: #D0104C;
-            //title赤みたいな
+            .titles{
+                img{
+                    float: left;
+                }
+            }
             .title_icon{
                 width: 50px;
-                height: 50px;
                 margin-right: 10px;
-                background-color: #9E7A7A;
-                //タイトルアイコンはピンクっぽいグレー
+            }
+            .title{
+                width: auto;
+                height: 50px;
             }
         }
     }
 }
 
 #main{
+    #mydata{
+        img{
+            margin: 0 auto;
+        }
+    }
     //スマホ
     @media (max-width: 550px) {
         padding-top: 70px;
-        height: 2000px;
+        margin: 0 5%;
         background-color: #D7B98E;
         //きなこみたいなmain
         .top_img_sp{
             width: 100%;
             height: auto;
-            background-color: #6E552F;
-            //こげちゃ
         }
         .top_img_pc{
             display: none;
@@ -79,8 +119,8 @@ header{
             width: auto;
             height: auto;
             margin-top: 30px;
-            margin-left: 5%;
-            margin-right: 5%;
+            margin-left: 0;
+            margin-right: 0;
             margin-bottom: 40px;
             p{
                 font-size: 15px;
@@ -90,13 +130,61 @@ header{
                 -webkit-margin-after: 15px;
             }
         }
+        .second_title{
+            width: auto;
+            height: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            background-color: green;
+        }
+        .second_title_middle{
+            width: auto;
+            height: 40px;
+            padding-bottom: 30px;
+            text-align: center;
+            background-color: green;
+        }
+        .tokucho{
+            margin-bottom: 20px;
+        }
+        .tokucho_boxs{
+            height: auto;
+            margin-bottom: 40px;
+        }
+        .tokucho_box{
+                width: 90%;
+                height: 220px;
+                margin-left: auto;
+                margin-right: auto;
+                border: solid 1px #9f9f9f;
+                border-radius: 20px;
+            }
+            .hitotume{
+                margin-bottom: 10px;
+            }
+            
+        #mydata{
+            padding: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
+            border: solid 1px blue;
+            text-align: center;
+            img{
+                width: 40%;
+                height: auto;
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
     }
     //デスクトップ
     @media (min-width: 550px) {
         padding-top: 100px;
-        height: 2000px;
-        background-color: #D7B98E;
-        //きなこみたいなmain
+        height: auto;
         .top_img_sp{
             display: none;
         }
@@ -107,15 +195,65 @@ header{
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 80px;
-            p{
-                font-size: 15px;
-                -webkit-margin-before: 8px;
-                -webkit-margin-after: 8px;
-                -webkit-margin-start: 0px;
-                -webkit-margin-end: 0px;
-            }
             .comment_bottom{
                 -webkit-margin-after: 18px;
+            }
+        }
+        .second_title{
+            width: 500px;
+            height: 40px;
+            margin-left: 90px;
+            background-color: green;
+        }
+        .second_title_middle{
+            width: 500px;
+            height: 40px;
+            padding-bottom: 60px;
+            margin-left: 90px;
+            background-color: green;
+        }
+        .tokucho{
+            margin-bottom: 20px;
+            width: 750px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .tokucho_boxs{
+            width: 740px;
+            height: 220px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 90px;
+        }
+        .tokucho_box{
+                width: 365px;
+                height: 220px;
+                border: solid 1px #9f9f9f;
+                border-radius: 20px;
+            }
+            .hitotume{
+                float: left;
+            }
+            .hutatume{
+                float: right;
+            }
+        
+        #mydata{
+            padding: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            height: 200px;
+            border: solid 1px blue;
+            text-align: center;
+            img{
+                width: 100px;
+                height: 100px;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 12px;
             }
         }
     }
