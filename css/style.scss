@@ -95,8 +95,114 @@ header{
     }
 }
 //nav（ハンバーガー）
+#nav-toggle{
+	display: none;
+	position: absolute;
+	right: -5%;
+	width: 30px;
+	height: 25px;
+	cursor: pointer;
+}
+#nav-toggle div{
+	position: relative;
+}
+
+#nav-toggle span{
+	display: block;
+	position: absolute;
+	width: 100%;
+	border-bottom: solid 3px #A26769;
+	-webkit-transition: .35s ease-in-out;
+	-moz-transition: .35s ease-in-out;
+	transition: .35s ease-in-out;
+}
+
+#nav-toggle span:nth-child(1){top: 0;}
+#nav-toggle span:nth-child(2){top: 11px}
+#nav-toggle span:nth-child(3){top: 22px;}
+
+li.nav a:hover {
+	
+}
+
+.nav{
+	display: inline-block;
+	padding: 0 40px 0 0;
+	font-size: 140%;
+	vertical-align: bottom;
+}
+
+header ul li::afyter{content: '|';}
+header ul li:last-child::after{content:'';}
+header ul li a{color:inherit;}
 //スマホ
     @media (max-width: 550px) {
+        header nav{
+		position: absolute;
+		right: 0;
+		top: -275px;
+		width: 50%;
+		padding: 0 10px;
+		-webkit-transition: .5s ease-in-out;
+		-moz-transition: .5s ease-in-out;
+		transition: .5s ease-in-out;
+		text-align: left;
+    	}
+            header ul{
+    		margin: 0;
+    	}
+    	
+    	header ul li{
+    		display: block;
+    		margin: 0;
+    		width: 100%;
+    		border-bottom: dotted 1px #fff;
+    		line-height: 2.5;
+    		float: none;
+    	}
+    	
+    	header ul li a{display: block;}
+    	
+    	header ul li::after{content: '';}
+    	
+    	header ul li:last-child{border-bottom: none;}
+    	
+    	#nav-toggle{
+    		display: block;
+    		top: 13px;
+    		}
+    	
+    	#global-nav{
+    	    z-index: 101;
+    	}
+    	#navs{
+    	    text-align: center;
+    	}
+    	
+    	.openNav #nav-toggle span:nth-child(1){
+    		top: 11px;
+    		-webkit-transform: rotate(-45deg);
+    		-moz-transform: rotate(-45deg);
+    		transform: rotate(-45deg);
+    	}
+    		
+    	.openNav #nav-toggle span:nth-child(2),
+    	.openNav #nav-toggle span:nth-child(3){
+    		top: 11px;
+    		-webkit-transform: rotate(45deg);
+    		-moz-transform: rotate(45deg);
+    		transform: rotate(45deg);
+    	}
+    	
+    	.openNav nav{
+    		-moz-transform: translateY(400px);
+    		-webkit-transform: translateY(400px);
+    		transform: translateY(400px);
+    	}
+    	
+    	.nav a{
+    		
+    	}
     }
 //デスクトップ
     @media (min-width: 550px) {
