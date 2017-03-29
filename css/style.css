@@ -98,7 +98,7 @@ header {
 
 .nav {
   display: inline-block;
-  padding: 0 40px 0 0;
+  padding-left: 30px;
   font-size: 140%;
   vertical-align: bottom; }
 
@@ -117,7 +117,6 @@ header ul li a {
     right: 0;
     top: -275px;
     width: 50%;
-    padding: 0 10px;
     -webkit-transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
@@ -148,10 +147,14 @@ header ul li a {
     top: 13px; }
 
   #global-nav {
+    width: 90%;
     z-index: 101; }
 
   #navs {
-    text-align: center; }
+    text-align: center;
+    padding-right: 40px; }
+    #navs li img {
+      height: 30px; }
 
   .openNav #nav-toggle span:nth-child(1) {
     top: 11px;
@@ -170,6 +173,13 @@ header ul li a {
     -moz-transform: translateY(400px);
     -webkit-transform: translateY(400px);
     transform: translateY(400px); } }
+@media (min-width: 550px) {
+  #navs {
+    padding-left: 500px;
+    width: 500px;
+    right: 0; }
+    #navs li img {
+      height: 23px; } }
 #main #mydata img {
   margin: 0 auto; }
 @media (max-width: 550px) {
@@ -206,6 +216,9 @@ header ul li a {
       text-align: center; }
     #main .second_title_pc {
       height: 32px; }
+    #main #merit {
+      padding-top: 90px;
+      margin-top: -90px; }
     #main .merit_boxs {
       height: auto;
       margin-bottom: 40px; }
@@ -223,6 +236,12 @@ header ul li a {
       padding-bottom: 30px; }
     #main .merit_pc {
       display: none; }
+    #main #motimono {
+      padding-top: 90px;
+      margin-top: -90px; }
+    #main #tokucho {
+      padding-top: 90px;
+      margin-top: -90px; }
     #main .tokucho {
       margin-bottom: 30px; }
     #main .tokucho_boxs {
@@ -237,6 +256,9 @@ header ul li a {
       border-radius: 20px; }
     #main .hitotume {
       margin-bottom: 10px; }
+    #main #saihoni {
+      padding-top: 90px;
+      margin-top: -90px; }
     #main #mydata {
       padding: 20px;
       margin-left: auto;
@@ -279,6 +301,9 @@ header ul li a {
     #main .second_title_pc {
       height: 32px;
       margin-top: 90px; }
+    #main #merit {
+      padding-top: 120px;
+      margin-top: -120px; }
     #main .merit_pc {
       height: 32px; }
     #main .merit_boxs {
@@ -297,6 +322,12 @@ header ul li a {
       float: left; }
     #main .hutatume {
       float: right; }
+    #main #motimono {
+      padding-top: 30px;
+      margin-top: -30px; }
+    #main #tokucho {
+      padding-top: 30px;
+      margin-top: -30px; }
     #main .tokucho {
       margin-top: 60px;
       margin-bottom: 40px;
@@ -318,6 +349,9 @@ header ul li a {
       float: left; }
     #main .hutatume {
       float: right; }
+    #main #saihoni {
+      padding-top: 150px;
+      margin-top: -150px; }
     #main .comment2 {
       padding-top: 60px; }
     #main #mydata {
