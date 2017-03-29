@@ -1,4 +1,4 @@
-$basewhite : #f8f8f8;
+$basewhite : #fbfbfb;
 $red: #C73E3A;
 $darkred: #A26769;
 
@@ -17,7 +17,6 @@ html{
 @media (min-width: 550px) {
     body{
         width: 1000px;
-        border: solid 1px green;
         margin: 0 auto;
         p{
             font-size: 15px;
@@ -30,7 +29,7 @@ html{
 
 header{
     width: 100%;
-    background-color: #f8f8f8;
+    background-color: #fbfbfb;
     position: fixed;
     top: -1px;
     border-bottom: solid 5px #C73E3A;
@@ -95,7 +94,15 @@ header{
         }
     }
 }
+//nav（ハンバーガー）
+//スマホ
+    @media (max-width: 550px) {
+    }
+//デスクトップ
+    @media (min-width: 550px) {
+    }
 
+//main（下の層）
 #main{
     #mydata{
         img{
@@ -106,8 +113,6 @@ header{
     @media (max-width: 550px) {
         padding-top: 70px;
         margin: 0 5%;
-        background-color: #D7B98E;
-        //きなこみたいなmain
         .top_img_sp{
             width: 100%;
             height: auto;
@@ -132,21 +137,44 @@ header{
         }
         .second_title{
             width: auto;
-            height: 40px;
+            height: auto;
             margin-left: auto;
             margin-right: auto;
             text-align: center;
-            background-color: green;
         }
         .second_title_middle{
             width: auto;
-            height: 40px;
+            height: 25px;
             padding-bottom: 30px;
             text-align: center;
-            background-color: green;
+        }
+        .second_title_pc{
+            height: 32px;
+        }
+        .merit_boxs{
+            height: auto;
+            margin-bottom: 40px;
+        }
+        .merit_box{
+                width: 90%;
+                height: 220px;
+                margin-left: auto;
+                margin-right: auto;
+                border: solid 1px #9f9f9f;
+                border-radius: 20px;
+            }
+            .hitotume{
+                margin-bottom: 10px;
+            }
+        .merit_sp{
+            height: 60px;
+            padding-bottom: 30px;
+        }
+        .merit_pc{
+            display: none;
         }
         .tokucho{
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         .tokucho_boxs{
             height: auto;
@@ -169,10 +197,9 @@ header{
             margin-left: auto;
             margin-right: auto;
             width: auto;
-            border: solid 1px blue;
             text-align: center;
             img{
-                width: 40%;
+                width: 35%;
                 height: auto;
                 margin-bottom: 15px;
             }
@@ -201,19 +228,49 @@ header{
         }
         .second_title{
             width: 500px;
-            height: 40px;
+            height: 32px;
             margin-left: 90px;
-            background-color: green;
         }
         .second_title_middle{
             width: 500px;
-            height: 40px;
+            height: 32px;
             padding-bottom: 60px;
             margin-left: 90px;
-            background-color: green;
+            clear: both;
         }
+        .merit_sp{
+            display: none;
+        }
+        .second_title_pc{
+            height: 32px;
+            margin-top: 90px;
+        }
+        .merit_pc{
+            height: 32px;
+        }
+        .merit_boxs{
+            width: 800px;
+            height: 250px;
+            margin-top: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 90px;
+        }
+        .merit_box{
+                width: 380px;
+                height: 250px;
+                border: solid 1px #9f9f9f;
+                border-radius: 20px;
+            }
+            .hitotume{
+                float: left;
+            }
+            .hutatume{
+                float: right;
+            }
         .tokucho{
-            margin-bottom: 20px;
+            margin-top: 60px;
+            margin-bottom: 40px;
             width: 750px;
             height: auto;
             margin-left: auto;
@@ -224,7 +281,6 @@ header{
             height: 220px;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 90px;
         }
         .tokucho_box{
                 width: 365px;
@@ -238,14 +294,16 @@ header{
             .hutatume{
                 float: right;
             }
+        .comment2{
+            padding-top: 60px;
+        }
         
         #mydata{
-            padding: 60px;
+            padding: 40px;
             margin-left: auto;
             margin-right: auto;
             width: 200px;
-            height: 200px;
-            border: solid 1px blue;
+            height: auto;
             text-align: center;
             img{
                 width: 100px;
